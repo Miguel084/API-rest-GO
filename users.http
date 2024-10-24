@@ -15,3 +15,24 @@ Content-Type: application/json
   "id": "2",
   "name": "Rafael souza"
 }
+
+
+###
+
+DELETE localhost:8080/users/delete/1 HTTP/1.1
+Content-Type: application/json
+
+{
+  "id": "1",
+  "name": "Miguel de Oliveira Gonçalves"
+}
+
+###
+
+DELETE localhost:8080/users/delete/2 HTTP/1.1
+Content-Type: application/json
+
+{
+  "id": "2",
+  "name": "Rafael souza"
+}

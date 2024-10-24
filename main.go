@@ -46,7 +46,7 @@ func main() {
 		json.NewEncoder(w).Encode(user)
 	}).Methods("POST")
 
-	r.HandleFunc("/users/{id}", func(w http.ResponseWriter, r *http.Request) {
+	r.HandleFunc("/users/delete/{id}", func(w http.ResponseWriter, r *http.Request) {
 		vars := mux.Vars(r)
 		id := vars["id"]
 		if _, exists := users[id]; !exists {
